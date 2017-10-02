@@ -1,6 +1,7 @@
-Rails.application.routes.draw do
-get 'application/hello' => 'application#hell0'
-# You can have the root of your site routed with "root"
-root 'application#hello'
+require 'sinatra'
 
+class MyApp < Sinatra::Base
+  get '/' do
+    "<!DOCTYPE html><html><head></head><body>hello, world</body></html>"
+  end
 end
