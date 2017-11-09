@@ -1,7 +1,7 @@
 class Greeter
   def initialize(who)
     @who = who
-  end
+  end 
   def greet
     "Hello, #{@who}"
   end
